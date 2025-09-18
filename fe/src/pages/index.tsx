@@ -12,7 +12,6 @@ import {
   AlertItem,
   TotalInventoryItem,
 } from "../types";
-import { Plus } from "lucide-react";
 
 export default function DashboardPage() {
   const [inventory, setInventory] = useState<InventoryItem[]>([]);

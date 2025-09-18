@@ -17,16 +17,29 @@ body {
 }
 
 /* Hiệu ứng background radial gradient như ví dụ React */
-body::before {
+/* body::before {
   content: "";
   position: fixed;
   inset: 0;
   z-index: 0;
   pointer-events: none;
   /* Hai radial gradient chồng lên nhau */
-  background-image:
+  /* background-image:
     radial-gradient(circle at 30% 70%, rgba(173, 216, 230, 0.35), transparent 60%),
     radial-gradient(circle at 70% 30%, rgba(255, 182, 193, 0.4), transparent 60%);
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+
+/* Soft Blue Radial Background cho body */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -10;
+  pointer-events: none;
+  background: #ffffff;
+  background-image: radial-gradient(circle at top center, rgba(59, 130, 246, 0.5), transparent 70%);
   background-repeat: no-repeat;
   background-size: cover;
 }
